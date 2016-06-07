@@ -1,0 +1,2 @@
+# jscodestyle
+A JavaScript codestyle.
