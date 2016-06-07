@@ -1,0 +1,21 @@
+{
+    "name": "eslint-config-cortys",
+    "version": "1.0.0",
+    "description": "Cortys JS style.",
+    "keywords": [
+        "eslint",
+        "config",
+        "style"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Clemens Damke",
+        "email": "clemens@cortys.de",
+        "url": "http://www.cortys.de"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Cortys/eslint-config"
+    },
+    "main": ".eslintrc.json"
+}
