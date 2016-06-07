@@ -44,7 +44,7 @@
         "func-style": ["warn", "declaration", {
             "allowArrowFunctions": true
         }],
-        "generator-star-spacing": "warn",
+        "generator-star-spacing": ["warn", "after"],
         "global-require": "off",
         "guard-for-in": "warn",
         "handle-callback-err": "warn",
