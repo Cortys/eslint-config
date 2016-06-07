@@ -55,21 +55,24 @@
         "init-declarations": "off",
         "jsx-quotes": "warn",
         "key-spacing": "warn",
-        "keyword-spacing": [1, {
+        "keyword-spacing": ["warn", {
             "before": true,
-            "after": false,
+            "after": true,
             "overrides": {
-                "try": {
-                    "after": true
+                "if": {
+                    "after": false
                 },
-                "finally": {
-                    "after": true
+                "for": {
+                    "after": false
                 },
-                "else": {
-                    "after": true
+                "while": {
+                    "after": false
                 },
-                "return": {
-                    "after": true
+                "function": {
+                    "after": false
+                },
+                "catch": {
+                    "after": false
                 }
             }
         }],
