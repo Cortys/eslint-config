@@ -41,9 +41,7 @@
         "eol-last": "warn",
         "eqeqeq": ["error", "allow-null"],
         "func-names": "off",
-        "func-style": ["warn", "declaration", {
-            "allowArrowFunctions": true
-        }],
+        "func-style": "off",
         "generator-star-spacing": ["warn", "after"],
         "global-require": "off",
         "guard-for-in": "warn",
