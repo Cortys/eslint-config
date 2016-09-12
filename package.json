@@ -1,21 +1,33 @@
 {
-    "name": "eslint-config-cortys",
-    "version": "1.0.4",
-    "description": "Cortys JS style.",
-    "keywords": [
-        "eslint",
-        "config",
-        "style"
-    ],
-    "license": "MIT",
-    "author": {
-        "name": "Clemens Damke",
-        "email": "clemens@cortys.de",
-        "url": "http://www.cortys.de"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Cortys/eslint-config"
-    },
-    "main": ".eslintrc.json"
+	"name": "eslint-config-cortys",
+	"version": "1.1.0",
+	"description": "Cortys JS style.",
+	"keywords": [
+		"eslint",
+		"config",
+		"style"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "Clemens Damke",
+		"email": "clemens@cortys.de",
+		"url": "http://www.cortys.de"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Cortys/eslint-config"
+	},
+	"main": ".eslintrc.json",
+
+	"scripts": {
+		"test": "eslint-find-rules -u"
+	},
+
+	"dependencies": {
+		"eslint-plugin-require-path-exists": "1.1.5"
+	},
+	"devDependencies": {
+		"eslint": "3.5.0",
+		"eslint-find-rules": "1.13.1"
+	}
 }
