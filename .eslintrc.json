@@ -1,12 +1,26 @@
 {
+	"root": true,
 	"env": {
 		"es6": true,
 		"node": true
 	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "script"
+	},
 	"plugins": [
-		"require-path-exists"
+		"import"
 	],
 	"extends": "eslint:recommended",
+	"overrides": {
+		"files": ["**/*.mjs"],
+		"parserOptions": {
+			"sourceType": "module"
+		},
+		"rules": {
+			"import/no-commonjs": "error"
+		}
+	},
 	"rules": {
 		"accessor-pairs": "warn",
 		"array-bracket-spacing": ["warn", "never"],
@@ -52,7 +66,9 @@
 		"id-blacklist": "error",
 		"id-length": "off",
 		"id-match": "error",
-		"indent": ["warn", "tab"],
+		"indent": ["warn", "tab", {
+			"ignoredNodes": ["TemplateLiteral *"]
+		}],
 		"init-declarations": "off",
 		"jsx-quotes": "warn",
 		"key-spacing": "warn",
@@ -81,7 +97,12 @@
 		"lines-around-comment": "warn",
 		"lines-around-directive": "warn",
 		"max-depth": "warn",
-		"max-len": "off",
+		"max-len": ["warn", {
+			"code": 120,
+			"ignoreComments": true,
+			"ignoreTemplateLiterals": true,
+			"ignoreRegExpLiterals": true
+		}],
 		"max-nested-callbacks": "warn",
 		"max-params": ["warn", {
 			"max": 5
@@ -162,6 +183,7 @@
 		"no-unmodified-loop-condition": "error",
 		"no-unneeded-ternary": "warn",
 		"no-unused-expressions": "warn",
+		"no-unused-vars": "warn",
 		"no-use-before-define": "off",
 		"no-useless-call": "warn",
 		"no-useless-concat": "warn",
@@ -207,8 +229,25 @@
 		"wrap-regex": "off",
 		"yield-star-spacing": "warn",
 		"yoda": ["warn", "never"],
-		"require-path-exists/notEmpty": "error",
-		"require-path-exists/tooManyArguments": "error",
-		"require-path-exists/exists": "error"
+		"import/no-unresolved": ["error", {
+			"commonjs": true
+		}],
+		"import/named": "error",
+		"import/default": "error",
+		"import/namespace": "error",
+		"import/no-self-import": "error",
+		"import/no-cycle": "warn",
+		"import/export": "error",
+		"import/no-named-as-default": "warn",
+		"import/no-named-as-default-member": "warn",
+		"import/no-deprecated": "warn",
+		"import/no-extraneous-dependencies": "error",
+		"import/no-mutable-exports": "warn",
+		"import/no-useless-path-segments": "warn",
+		"import/first": "warn",
+		"import/no-duplicates": "warn",
+		"import/extensions": ["warn", "never"],
+		"import/order": "warn",
+		"import/newline-after-import": "warn"
 	}
 }
