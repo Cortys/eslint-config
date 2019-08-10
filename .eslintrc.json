@@ -12,7 +12,7 @@
 		"import"
 	],
 	"extends": "eslint:recommended",
-	"overrides": {
+	"overrides": [{
 		"files": ["**/*.mjs"],
 		"parserOptions": {
 			"sourceType": "module"
@@ -20,7 +20,7 @@
 		"rules": {
 			"import/no-commonjs": "error"
 		}
-	},
+	}],
 	"rules": {
 		"accessor-pairs": "warn",
 		"array-bracket-spacing": ["warn", "never"],
