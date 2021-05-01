@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-cortys",
-	"version": "2.1.1",
+	"version": "2.2.0",
 	"description": "Cortys JS style.",
 	"keywords": [
 		"eslint",
@@ -22,10 +22,10 @@
 		"test": "eslint-find-rules -u"
 	},
 	"dependencies": {
-		"eslint-plugin-import": "^2.18.2"
+		"eslint-plugin-import": "^2.22.1"
 	},
 	"devDependencies": {
-		"eslint": "^6.1.0",
-		"eslint-find-rules": "^3.4.0"
+		"eslint": "^7.25.0",
+		"eslint-find-rules": "^3.6.1"
 	}
 }
