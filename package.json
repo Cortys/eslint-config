@@ -18,14 +18,10 @@
 		"url": "https://github.com/Cortys/eslint-config"
 	},
 	"main": ".eslintrc.json",
-	"scripts": {
-		"test": "eslint-find-rules -u"
-	},
 	"dependencies": {
 		"eslint-plugin-import": "^2.22.1"
 	},
 	"devDependencies": {
-		"eslint": "^7.25.0",
-		"eslint-find-rules": "^3.6.1"
+		"eslint": "^8.1.0"
 	}
 }
